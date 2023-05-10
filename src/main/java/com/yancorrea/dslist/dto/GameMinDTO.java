@@ -1,6 +1,7 @@
 package com.yancorrea.dslist.dto;
 
 import com.yancorrea.dslist.entities.Game;
+import com.yancorrea.dslist.projections.GameMinProjection;
 
 public class GameMinDTO {
     private Long id;
@@ -18,6 +19,14 @@ public class GameMinDTO {
         year = entity.getYear();
         imgUrl = entity.getTitle();
         shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinDTO(GameMinProjection projetction) {
+        id = projetction.getId();
+        title = projetction.getTitle();
+        year = projetction.getYear();
+        imgUrl = projetction.getTitle();
+        shortDescription = projetction.getShortDescription();
     }
 
     public Long getId() {
