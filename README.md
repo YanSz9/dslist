@@ -16,6 +16,12 @@ DsList é uma API REST desenvolvida seguindo o padrão de desenvolvimento em cam
 - H2
 - PostegreSQL
 
+## Features
+- Get all games
+- Get game by id
+- Get game list
+- Get games by list
+
 ## Autor 
 
 Yan Corrêa 
